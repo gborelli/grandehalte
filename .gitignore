@@ -1,4 +1,4 @@
-images/*
+# images/*
 node_modules
 .sass-cache
 *.map
