@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'mixins';
-@import 'font-awesome.min.css';
+@import '../lib/font-awesome-4.3.0/css/font-awesome.min.css';
+@import '../lib/jquery.bxslider/jquery.bxslider.css';
 @import url('http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic');
 
 /*
@@ -69,6 +70,11 @@ $size-wrapper-pad-lr: 3em;
 		a {
 			color: inherit;
 			border: 0;
+		}
+		small, .small {
+		    font-size: 65%;
+	        font-weight: 400;
+    	    line-height: 1;
 		}
 	}
 
@@ -1328,6 +1334,26 @@ $size-wrapper-pad-lr: 3em;
 			background: transparent;
 			box-shadow: none;
 			position: absolute;
+
+            -webkit-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+
+			&.fixed {
+			    position: fixed !important;
+    			background-color: rgba(39, 40, 51,1);
+    			top: 0;
+    			font-size: 90%;
+				img {
+
+					-ms-transform: scale(0.8,0.8); /* IE 9 */
+    				-webkit-transform: scale(0.8,0.8); /* Chrome, Safari, Opera */
+					transform: scale(0.7,0.7);
+					-webkit-transition: all 0.4s ease;
+	    			transition: all 0.4s ease;
+	    			top: -.8em;
+	    			position: relative;
+				}
+			}
 		}
 	}
 
@@ -1336,7 +1362,7 @@ $size-wrapper-pad-lr: 3em;
 	#banner {
 		background-attachment: fixed;
 		background-color: $color-accent2-bg;
-		background-image: url('../images/banner.jpg');
+		background-image: url('../../images/banner.jpg');
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.25);
@@ -1381,6 +1407,7 @@ $size-wrapper-pad-lr: 3em;
 				h2 {
 					font-size: 2.5em;
 					margin: 0;
+					color: $color-accent1-bg;
 				}
 
 				p {
@@ -1416,7 +1443,7 @@ $size-wrapper-pad-lr: 3em;
 
 	#footer {
 		background: $color-accent2-bg;
-		padding: $size-wrapper-pad-tb 0;
+		padding: 1em 0;
 		text-align: center;
 
 		.icons {
