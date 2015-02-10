@@ -46,6 +46,9 @@ a:hover {
   color: #F651FF !important;
   border-bottom-color: transparent;
 }
+a.small {
+  font-size: 65%;
+}
 
 strong, b {
   color: #ffffff;

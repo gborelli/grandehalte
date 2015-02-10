@@ -17,6 +17,39 @@
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-xlarge.css" />
 		</noscript>
+
+	    <style>
+	      #map {
+			width: 100%;
+			height: 250px;
+	      }
+    	</style>
+    	<script type="text/javascript"
+    	        src="https://maps.googleapis.com/maps/api/js"></script>
+
+		<script type="text/javascript">
+		(function($) {
+
+		    initialize_map = function () {
+		        var mapCanvas = $('#map'),
+		            grande_halte_latlng = new google.maps.LatLng(45.865718, 7.903923),
+		            mapOptions = {
+		                center: grande_halte_latlng,
+		                zoom: 17,
+		                mapTypeId: google.maps.MapTypeId.ROADMAP
+		            },
+		            map = new google.maps.Map(mapCanvas[0], mapOptions),
+		            marker = new google.maps.Marker({
+		                position: grande_halte_latlng,
+		                map: map,
+		                title: 'Rifugio Grande Halte'
+		            });
+		    };
+			google.maps.event.addDomListener(window, 'load', initialize_map);
+		})(jQuery);
+		</script>
+
+
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
@@ -27,7 +60,7 @@
 				<h1 id="logo"><a href="index.html" title="Grande Halte Hut"><img src="images/logo.png" alt="Grande halte logo"></a></h1>
 				<nav id="nav">
 					<ul>
-						<li><a href="#rifugio">Rifugio</a></li>
+						<li><a href="#gio">Rifugio</a></li>
 						<li><a href="#informazioni">Informazioni</a></li>
 						<li><a href="index.html">Estate e inverno</a></li>
 						<li><a href="#contacts">Prenota</a></li>
@@ -76,13 +109,16 @@
 						    		<li>Gratis bimbi sotto i 6 anni</li>
 						    	</ul>
 							</p>
-
-						</div>
-						<div class="4u$ 12u$(medium)">
-							<p>Il nostro rifugio sarà aperto tutti i giorni della stagione invernale a partire dal 26 Dicembre.</p>
+	<!-- 						<p>Il nostro rifugio sarà aperto tutti i giorni della stagione invernale a partire dal 26 Dicembre.</p>
 							<ul class="actions">
 								<li><a href="#contacts" class="button">Contattaci</a></li>
-							</ul>
+							</ul> -->
+						</div>
+						<div class="4u$ 12u$(medium)">
+							<div id="map"></div>
+							<a class="small"
+							   href="https://goo.gl/maps/4uaPn"
+							   target="_BLANK">Apri la mappa in una nuova finestra</a>
 						</div>
 					</div>
 				</div>
