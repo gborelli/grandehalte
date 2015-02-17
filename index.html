@@ -18,12 +18,13 @@
 			<link rel="stylesheet" href="css/style-xlarge.css" />
 		</noscript>
 
-	    <style>
-	      #map {
-			width: 100%;
-			height: 250px;
-	      }
-    	</style>
+        <script type="text/javascript"
+                src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.carousel.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.carousel.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.theme.min.css" />
+
+
+
     	<script type="text/javascript"
     	        src="https://maps.googleapis.com/maps/api/js"></script>
 
@@ -60,10 +61,11 @@
 				<h1 id="logo"><a href="index.html" title="Grande Halte Hut"><img src="images/logo.png" alt="Grande halte logo"></a></h1>
 				<nav id="nav">
 					<ul>
-						<li><a href="#gio">Rifugio</a></li>
-						<li><a href="#informazioni">Informazioni</a></li>
-						<li><a href="index.html">Estate e inverno</a></li>
-						<li><a href="#contacts">Prenota</a></li>
+						<li><a href="#rifugio">Rifugio</a></li>
+						<li><a href="#ristorante">Ristorante</a></li>
+						<li><a href="#servizi">Servizi</a></li>
+						<li><a href="#dovesiamo">Dove siamo</a></li>
+						<li><a href="#contacts">Contatti</a></li>
 						<li><a href="english.html">Inglese</a></li>
 					</ul>
 				</nav>
@@ -95,177 +97,179 @@
 						<div class="4u 12u$(medium)">
 							<header>
 								<h2>Il rifugio</h2>
-								<p>Dall'inizio del 1900 il Grande Halte conserva
-								la tradizione e bla bla bla.
-								</p>
+								<p>Grande Halte è stato per molti decenni
+								un'importante tappa per salita alla Capanna Margherita e alle cime del Monte Rosa.</p>
 							</header>
 						</div>
-						<div class="4u 12u$(medium)">
-							<h3>Prezzi</h3>
-							<p>Mezza Pensione Inverno 2014/2015 (bevande escluse)</p>
-							    <ul>
-							    	<li>70,00 € adulti</li>
-							    	<li>45,00 € ragazzi dai 6 ai 10 anni</li>
-						    		<li>Gratis bimbi sotto i 6 anni</li>
-						    	</ul>
-							</p>
-	<!-- 						<p>Il nostro rifugio sarà aperto tutti i giorni della stagione invernale a partire dal 26 Dicembre.</p>
-							<ul class="actions">
-								<li><a href="#contacts" class="button">Contattaci</a></li>
-							</ul> -->
-						</div>
-						<div class="4u$ 12u$(medium)">
-							<div id="map"></div>
-							<a class="small"
-							   href="https://goo.gl/maps/4uaPn"
-							   target="_BLANK">Apri la mappa in una nuova finestra</a>
+						<div class="8u 12u$(medium)">
+							<ul class="nostyle slider">
+								<li>
+								  <img class="image right"
+									 src="images/gambero_rosso.jpg" />
+
+								  <blockquote>La vista incantevole e la cucina ripagano appieno il disagio di non poter arrivare  qui in auto.
+
+								  <br/>Gambero rosso lowcost
+
+								  </blockquote>
+								</li>
+								<li>
+									<img class="image right"
+									     src="images/guida_critica_golosa.png" />
+									<blockquote>&hellip; focaccia con farina biologica &hellip; pane, pasta e confetture di produzione propria, salumi locali e una selezione di vini da fare invidia a un ristorante.<br/>Paolo Massorbio, Guida Critico Golosa. Piemonte</blockquote>
+								</li>
+								<li>
+									<img class="image right"
+									     src="images/mulino_sobrino.png" />
+									<blockquote>Paste all’uovo, pane, biscotti e dolci prodotti con farine biologiche macinate a pietra del Mulino Sobrino La Morra (CN).
+									</blockquote>
+								</li>
+							</ul>
+                            <script type="text/javascript">
+                                $(".slider").owlCarousel({
+                                        autoPlay: 5000,
+                                        slideSpeed : 300,
+                                        paginationSpeed : 400,
+                                        singleItem: true
+                                });
+                            </script>
 						</div>
 					</div>
 				</div>
 			</div>
-			<a href="#altro" class="goto-next scrolly">Next</a>
+			<a href="#ristorante" class="goto-next scrolly">Next</a>
 		</section>
 
-		<!-- Altro -->
-			<section id="altro" class="spotlight style1 bottom">
-				<span class="image fit main"><img src="images/monti_con_neve.jpg" alt="" /></span>
-				<div class="content">
-					<div class="container">
-						<div class="row">
-							<div class="4u 12u$(medium)">
-								<header>
-									<h2>Il rifugio</h2>
-									<p>Dall'inizio del 1900 il Grande Halte conserva
-									la tradizione e bla bla bla.
-									</p>
-								</header>
-							</div>
-							<div class="4u 12u$(medium)">
+		<!-- Ristorante -->
+		<section id="ristorante" class="spotlight style2 right">
+			<span class="image fit main">
+                <img src="images/ristorante.jpg" alt="" /></span>
+			<div class="content">
+				<header>
+					<h2>Ristorante</h2>
+					<p>Alta quota alta ristorazione.<p>
+				</header>
 
-                                <strong>Come raggiungerci</strong>
+				<p>Nei nostri piatti anche un poco dei profumi dei nostri monti e soprattutto nulla di acquistato "già pronto".</p>
 
-                                <p>da Alagna in telecabina fino a Pianalunga (15 min), da qui scendere lungo la pista da sci per Alagna (2 min)</p>
+				<ul class="actions">
+					<li><a href="#contacts" class="button">Contattaci</a></li>
+				</ul>
+			</div>
+			<a href="#servizi" class="goto-next scrolly">Next</a>
+		</section>
 
-                                <p>a piedi seguendo il sentiero n.5 da Alagna - piazzale funivia (2 ore) o dalla frazione Piane (1,30 ore)</p>
-							</div>
-							<div class="4u$ 12u$(medium)">
-								<p>Il nostro rifugio sarà aperto tutti i giorni della stagione invernale a partire dal 26 Dicembre.</p>
-								<ul class="actions">
-									<li><a href="#contacts" class="button">Contattaci</a></li>
-								</ul>
-							</div>
+		<!-- Rifugio servizi -->
+		<section id="servizi" class="spotlight style3 left">
+			<span class="image fit main bottom"><img src="images/stanza.jpg" alt="" /></span>
+			<div class="content">
+				<header>
+					<h2>Servizi</h2>
+				</header>
+
+                <p>Grande Halte conserva la suggestione di un locale alpino storico ed offre tutto il calore ed i comfort moderni per gradevoli soggiorni sia in inverno che in estate.</p>
+
+                <div class="box alt">
+
+                    <div class="row icon-list">
+                        <div class="6u 6u(medium) 12u$(xsmall)">
+                            <span class="icon alt fa-cutlery"></span>
+                            <span>Bar e Ristorante</span>
+                        </div>
+                        <div class="6u$ 6u$(medium) 12u$(xsmall)">
+                            <span class="icon alt fa-wifi"></span>
+                            <span>WiFi</span>
+                        </div>
+                        <div class="6u 6u(medium) 12u$(xsmall)">
+                            <span class="icon alt fa-hotel"></span>
+                            <span>Camere in legno con riscaldamento</span>
+                        </div>
+                        <div class="6u$ 6u$(medium) 12u$(xsmall)">
+                            <span class="icon">
+                                <span class="icon fa-female"></span>
+                            </span>
+                            <span>Bagni al piano con doccia calda</span>
+                        </div>
+                         <div class="6u 6u(medium) 12u$(xsmall)">
+                            <span class="icon alt fa-code-fork"></span>
+                            <span>Ski room e scaldascarponi</span>
+                        </div>
+                        <div class="6u$ 6u$(medium) 12u$(xsmall)">
+                            <span class="icon alt fa-suitcase"></span>
+                            <span>Trasferimento bagagli al rifugio</span>
+                        </div>
+                        <div class="6u 6u(medium) 12u$(xsmall)">
+                            <span class="icon alt fa-heart"></span>
+                            <span>Sauna</span>
+                        </div>
+                        <div class="6u$ 6u$(medium) 12u$(xsmall)">
+                            <span class="icon alt fa-recycle"></span>
+                            <span>Energia pulita</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <footer class="major">
+                    <ul class="actions">
+                        <li><a href="#contacts" class="button">Prenota una vacanza</a></li>
+                    </ul>
+                </footer>
+			</div>
+			<a href="#dovesiamo" class="goto-next scrolly">Next</a>
+		</section>
+
+		<!-- Dovesiamo -->
+		<section id="dovesiamo" class="spotlight style1 bottom">
+			<span class="image fit main"><img src="images/tavolo_bramaterra.jpg" alt="" /></span>
+			<div class="content">
+				<div class="container">
+					<div class="row">
+						<div class="4u 12u$(medium)">
+                            <header>
+                                <h2>Dove Siamo</h2>
+                                <p>Grande Halte si trova ad Alagna
+                                Valsesia&nbsp;(VC) a 2000 mt. s.l.m sulle piste da sci.
+                                </p>
+                            </header>
+                        </div>
+                        <div class="4u 12u$(medium)">
+                            <p>Puoi raggiungerci da Alagna in telecabina fino a Pianalunga e da qui scendere lungo la pista da sci per Alagna (5 min a piedi)
+                            <br/><span class="small">Ultima corsa in salita da Alagna alle ore 16:30</span></p>
+
+                            <p>oppure a piedi seguendo il sentiero n.5 da Alagna - piazzale funivia in 2 ore o dalla frazione Piane in 1,30 ore.</p>
+                        </div>
+
+						<div class="4u$ 12u$(medium) map-wrapper">
+                            <div id="map"></div>
+                            <a class="small"
+                               href="https://goo.gl/maps/4uaPn"
+                               target="_BLANK">Apri la mappa in una nuova finestra</a>
 						</div>
 					</div>
 				</div>
-				<a href="#two" class="goto-next scrolly">Next</a>
-			</section>
-
-		<!-- Two -->
-			<section id="two" class="spotlight style2 right">
-				<span class="image fit main"><img src="images/tavolo_bramaterra.jpg" alt="" /></span>
-				<div class="content">
-					<header>
-						<h2>Il Rifugio</h2>
-						<p>...</p>
-					</header>
-
-					<h3>Come raggiungerci</h3>
-					<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
-
-					<ul class="actions">
-						<li><a href="#contacts" class="button">Contattaci</a></li>
-					</ul>
-				</div>
-				<a href="#three" class="goto-next scrolly">Next</a>
-			</section>
-
-		<!-- Three -->
-			<section id="three" class="spotlight style3 left">
-				<span class="image fit main bottom"><img src="images/stanza.jpg" alt="" /></span>
-				<div class="content">
-					<header>
-						<h2>Interdum felis blandit praesent sed augue</h2>
-						<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
-					</header>
-					<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
-					<ul class="actions">
-						<li><a href="#" class="button">Learn More</a></li>
-					</ul>
-				</div>
-				<a href="#four" class="goto-next scrolly">Next</a>
-			</section>
-
-		<!-- Servizi -->
-		<section id="four" class="wrapper style1 special fade-up">
-			<div class="container">
-				<header>
-					<h2>Servizi offerti</h2>
-				</header>
-				<div class="box alt">
-                    <div class="row ">
-                        <section class="3u 4u(medium) 12u$(xsmall)">
-                            <span class="icon alt major fa-cutlery"></span>
-                            <h3>Bar e Ristorante</h3>
-                        </section>
-                        <section class="3u 4u(medium) 12u$(xsmall)">
-                            <span class="icon alt major fa-wifi"></span>
-                            <h3>WiFi</h3>
-                        </section>
-                        <section class="3u 4u$(medium) 12u$(xsmall)">
-                            <span class="icon alt major fa-hotel"></span>
-                            <h3>Camere in legno con riscaldamento</h3>
-                        </section>
-                        <section class="3u$ 4u(medium) 12u$(xsmall)">
-                            <span class="icon alt major fa-heart"></span>
-                            <h3>Sauna</h3>
-                        </section>
-                        <section class="3u 4u(medium) 12u$(xsmall)">
-                            <span class="icon major">
-                                <span class="icon alt  fa-male"></span>
-                                <span class="icon fa-female"></span>
-                            </span>
-                            <h3>Bagni al piano con doccia calda</h3>
-                        </section>
-                         <section class="3u 4u$(medium) 12u$(xsmall)">
-                            <span class="icon alt major fa-code-fork"></span>
-                            <h3>Ski room e scaldascarponi</h3>
-                        </section>
-                        <section class="3u 4u(medium) 12u$(xsmall)">
-                            <span class="icon alt major fa-suitcase"></span>
-                            <h3>Trasferimento bagagli al rifugio</h3>
-                        </section>
-                        <section class="3u$ 4u$(medium) 12u$(xsmall)">
-                            <span class="icon alt major fa-recycle"></span>
-                            <h3>Energia pulita</h3>
-                        </section>
-					</div>
-				</div>
-				<footer class="major">
-					<ul class="actions">
-						<li><a href="#contacts" class="button">Prenota una vacanza</a></li>
-					</ul>
-				</footer>
 			</div>
+			<a href="#contacts" class="goto-next scrolly">Next</a>
 		</section>
 
 		<!-- Contacts -->
-		<section id="contacts" class="wrapper style2 special fade">
+		<section id="contacts" class="wrapper special style1 fade-up">
 			<div class="container">
 				<header>
 					<h3>Contatti</h3>
-					<p>Cell.: 348 8752203</p>
-					<p>email: info@grandehalte.it</p>
+                    <p>Contattaci per prenotare un soggiorno da noi</p>
 				</header>
 				<form method="post" action="#" class="container 50%">
 					<div class="row uniform 60%">
-						<div class="4u 12u$(xsmall)"><input type="email" name="email" id="name" placeholder="Your Name" /></div>
-						<div class="4u% 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
+						<div class="6u 12u$(xsmall)"><input type="email" name="email" id="name" placeholder="Inserisci il tuo nome" /></div>
+						<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Inserisci la tua mail" /></div>
 						<div class="12u$ 12u$(xsmall)">
 							<textarea name="text" placeholder="..."></textarea>
 						</div>
-						<div class="12u$ 12u$(xsmall)"><input type="submit" value="Invia" class="fit special" /></div>
+						<div class="4u$ 12u$(xsmall)"><input type="submit" value="Invia" class="fit special" /></div>
 					</div>
 				</form>
+                <p><strong>Cell.:</strong> 348 8752203  <strong>email:</strong> <a href="info@grandehalte.it">info@grandehalte.it</a></p>
 			</div>
 		</section>
 

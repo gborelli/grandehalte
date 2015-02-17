@@ -44,7 +44,7 @@ module.exports = function(grunt) {
                         'js/jquery.scrollex.min.js',
                         'js/skel.min.js',
                         'js/skel-layers.min.js',
-                        'lib/jquery.bxslider/jquery.bxslider.min.js',
+                        'lib/owl-carousel/owl.carousel.min.js',
                         'dist/js/init.min.js'
                     ]
                 }

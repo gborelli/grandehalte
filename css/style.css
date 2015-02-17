@@ -46,9 +46,6 @@ a:hover {
   color: #F651FF !important;
   border-bottom-color: transparent;
 }
-a.small {
-  font-size: 65%;
-}
 
 strong, b {
   color: #ffffff;
@@ -74,7 +71,6 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   border: 0;
 }
 h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .small, h5 small, h5 .small, h6 small, h6 .small {
-  font-size: 65%;
   font-weight: 400;
   line-height: 1;
 }
@@ -153,6 +149,10 @@ pre code {
   line-height: 1.75em;
   padding: 1em 1.5em;
   overflow-x: auto;
+}
+
+.small {
+  font-size: 0.8em;
 }
 
 .align-left {
@@ -738,6 +738,14 @@ select {
 
 textarea {
   padding: 0.75em 1em;
+  height: 12em;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  background-color: rgba(255, 255, 255, 0.075);
 }
 
 select option {
@@ -986,6 +994,9 @@ ul {
 }
 ul li {
   padding-left: 0.5em;
+}
+ul.nostyle {
+  list-style: none;
 }
 ul.alt {
   list-style: none;
@@ -1831,6 +1842,49 @@ body.is-touch #banner {
 }
 #footer .copyright li a {
   color: inherit;
+}
+
+#map {
+  width: 100%;
+  height: 250px;
+}
+
+.icon-list {
+  text-align: left;
+}
+.icon-list .icon {
+  background: #272833;
+  border-radius: 100%;
+  cursor: default;
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  width: 2em;
+}
+.icon-list div {
+  margin-bottom: 1.3em;
+}
+
+.map-wrapper {
+  text-align: right;
+}
+
+.slider {
+  overflow: hidden;
+  width: 100%;
+  margin: 4em 0 0 0;
+}
+.slider li {
+  display: block;
+  height: 8em;
+}
+
+#contacts {
+  background: #272833;
+}
+#contacts .container {
+  border-color: #F651FF;
 }
 
 /*# sourceMappingURL=style.css.map */
